@@ -1,7 +1,7 @@
 #include <stdio.h>
 unsigned int replace_byte(unsigned int x, size_t i, unsigned char b) {
-  unsigned mask = 0xff << (i * 8);
-  unsigned xb = b << (i * 8);
+  unsigned int mask = 0xff << (i * 8);
+  unsigned int xb = b << (i * 8);
   return (x & ~mask) | xb;
 }
 
